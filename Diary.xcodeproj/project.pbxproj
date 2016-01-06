@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		32629CABE39084691A8BD459 /* Pods_Diary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBC3BB6A3237199EC12BF20 /* Pods_Diary.framework */; };
 		F329B2251C3CEB7F003D4281 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F329B2241C3CEB7F003D4281 /* AppDelegate.swift */; };
 		F329B2271C3CEB7F003D4281 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F329B2261C3CEB7F003D4281 /* ViewController.swift */; };
 		F329B22A1C3CEB7F003D4281 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F329B2281C3CEB7F003D4281 /* Main.storyboard */; };
 		F329B22C1C3CEB7F003D4281 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F329B22B1C3CEB7F003D4281 /* Assets.xcassets */; };
 		F329B22F1C3CEB7F003D4281 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F329B22D1C3CEB7F003D4281 /* LaunchScreen.storyboard */; };
-		F329B2371C3D59E1003D4281 /* inputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F329B2361C3D59E1003D4281 /* inputViewController.swift */; };
+		F329B2371C3D59E1003D4281 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F329B2361C3D59E1003D4281 /* InputViewController.swift */; };
+		F329B2391C3D6791003D4281 /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F329B2381C3D6791003D4281 /* Diary.swift */; };
+		F738984DEC1FC64C57EC573B /* Pods_Diary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119B2E120C7E31E0320267D1 /* Pods_Diary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		119B2E120C7E31E0320267D1 /* Pods_Diary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C549D3F5FB2AD191C9B0B0C /* Pods-Diary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diary/Pods-Diary.debug.xcconfig"; sourceTree = "<group>"; };
-		3FBC3BB6A3237199EC12BF20 /* Pods_Diary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6098A4EE43A96E702079A970 /* Pods-Diary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diary.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diary/Pods-Diary.release.xcconfig"; sourceTree = "<group>"; };
 		F329B2211C3CEB7F003D4281 /* Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F329B2241C3CEB7F003D4281 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +28,8 @@
 		F329B22B1C3CEB7F003D4281 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F329B22E1C3CEB7F003D4281 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F329B2301C3CEB7F003D4281 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F329B2361C3D59E1003D4281 /* inputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = inputViewController.swift; sourceTree = "<group>"; };
+		F329B2361C3D59E1003D4281 /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		F329B2381C3D6791003D4281 /* Diary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,13 +37,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32629CABE39084691A8BD459 /* Pods_Diary.framework in Frameworks */,
+				F738984DEC1FC64C57EC573B /* Pods_Diary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4465253544F34FF470F9560F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				119B2E120C7E31E0320267D1 /* Pods_Diary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4A8D6491A187276BFFC95AD0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -51,21 +61,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		5683C252258551C3A06DA7DF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3FBC3BB6A3237199EC12BF20 /* Pods_Diary.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		F329B2181C3CEB7F003D4281 = {
 			isa = PBXGroup;
 			children = (
 				F329B2231C3CEB7F003D4281 /* Diary */,
 				F329B2221C3CEB7F003D4281 /* Products */,
 				4A8D6491A187276BFFC95AD0 /* Pods */,
-				5683C252258551C3A06DA7DF /* Frameworks */,
+				4465253544F34FF470F9560F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,7 +88,8 @@
 				F329B22B1C3CEB7F003D4281 /* Assets.xcassets */,
 				F329B22D1C3CEB7F003D4281 /* LaunchScreen.storyboard */,
 				F329B2301C3CEB7F003D4281 /* Info.plist */,
-				F329B2361C3D59E1003D4281 /* inputViewController.swift */,
+				F329B2361C3D59E1003D4281 /* InputViewController.swift */,
+				F329B2381C3D6791003D4281 /* Diary.swift */,
 			);
 			path = Diary;
 			sourceTree = "<group>";
@@ -216,7 +219,8 @@
 			files = (
 				F329B2271C3CEB7F003D4281 /* ViewController.swift in Sources */,
 				F329B2251C3CEB7F003D4281 /* AppDelegate.swift in Sources */,
-				F329B2371C3D59E1003D4281 /* inputViewController.swift in Sources */,
+				F329B2371C3D59E1003D4281 /* InputViewController.swift in Sources */,
+				F329B2391C3D6791003D4281 /* Diary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +332,10 @@
 			baseConfigurationReference = 3C549D3F5FB2AD191C9B0B0C /* Pods-Diary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Diary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.Diary;
@@ -340,6 +348,10 @@
 			baseConfigurationReference = 6098A4EE43A96E702079A970 /* Pods-Diary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Diary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.Diary;
