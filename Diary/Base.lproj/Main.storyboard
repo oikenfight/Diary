@@ -39,17 +39,36 @@
                     <navigationItem key="navigationItem" id="QVB-Xm-qJv">
                         <barButtonItem key="rightBarButtonItem" title="+" id="XD8-s6-on2">
                             <connections>
-                                <action selector="add:" destination="BYZ-38-t0r" id="zpT-aW-Xih"/>
+                                <segue destination="ayi-t7-Xx6" kind="show" identifier="addSegue" id="0do-Xx-bNj"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="8oN-eP-6Du" id="AKs-Ob-7Fa"/>
+                        <segue destination="ayi-t7-Xx6" kind="show" identifier="cellSegue" id="Qt8-ei-PXj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="869" y="67"/>
+            <point key="canvasLocation" x="758" y="67"/>
+        </scene>
+        <!--Input View Controller-->
+        <scene sceneID="AzH-EW-SFV">
+            <objects>
+                <viewController id="ayi-t7-Xx6" customClass="inputViewController" customModule="Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ybz-BK-GmS"/>
+                        <viewControllerLayoutGuide type="bottom" id="p47-42-aQy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oJU-h8-eil">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kUb-NL-lc5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1490" y="75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="G72-cx-f1Q">
@@ -70,4 +89,7 @@
             <point key="canvasLocation" x="1051" y="947"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Qt8-ei-PXj"/>
+    </inferredMetricsTieBreakers>
 </document>
